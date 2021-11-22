@@ -1,0 +1,35 @@
+<nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo"><img src="/img/logo.jpg"></a>
+      <ul class="right hide-on-med-and-down">
+          {{#if isHome}}
+             <li class="active"><a href="/"><i class="material-icons left">home</i>Домой</a></li>
+          {{else}}
+             <li><a href="/"><i class="material-icons left">home</i>Домой</a></li>
+          {{/if}}          
+          {{#if isAbout}}
+             <li class="active"><a href="/about"><i class="material-icons left">info</i>О проэкте</a></li>
+          {{else}}
+              <li><a href="/about"><i class="material-icons left">info</i>О проэкте</a></li>
+          {{/if}}
+          {{#if isStudent}}
+             <li class="active"><a href="/students"><i class="material-icons left">person</i>Студенты</a></li>
+          {{else}}
+             <li><a href="/students"><i class="material-icons left">person</i>Студенты</a></li>
+          {{/if}}
+           {{#if isGroup}}
+           <li class="active"><a href="/groups"><i class="material-icons left">group</i>Группы</a></li>
+          {{else}}
+            <li><a href="/groups"><i class="material-icons left">group</i>Группы</a></li>
+          {{/if}}
+
+
+        
+
+        
+
+        
+        
+      </ul>
+    </div>
+  </nav>

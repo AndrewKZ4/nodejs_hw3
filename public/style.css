@@ -1,0 +1,38 @@
+.nav-wrapper .brand-logo
+{
+    padding:  0 2rem;
+    
+}
+.nav-wrapper 
+{
+    background-color: #71224f;
+    
+}
+.brand-logo>img 
+{
+    width: 64px;
+    height: 64px;
+}
+.datepicker-date-display
+{
+    background-color: #71224f;
+}
+.datepicker-footer .btn-flat, .datepicker-table td.is-today
+{
+    color: #71224f;
+}
+.datepicker-table td.is-today
+{
+    color: #db268d;
+}
+
+
+
+@media only screen and (max-width: 600px) 
+{
+    .brand-logo>img 
+{
+    width: 56px;
+    height: 56px;
+}
+}

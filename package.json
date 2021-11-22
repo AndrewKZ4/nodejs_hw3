@@ -1,0 +1,35 @@
+{
+  "name": "nodejs_hw3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewKZ4/nodejs_hw3.git"
+  },
+  "keywords": [
+    "nodej",
+    "hw3"
+  ],
+  "author": "Andrey Kojuhov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrewKZ4/nodejs_hw3/issues"
+  },
+  "homepage": "https://github.com/AndrewKZ4/nodejs_hw3#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.1",
+    "sequelize": "^6.12.0-alpha.1",
+    "sqlite3": "^5.0.2"
+  }
+}

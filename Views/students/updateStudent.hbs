@@ -1,0 +1,44 @@
+<h1>Добавить студента</h1>
+
+ <div class="row">
+    <form class="col s12" action="/students/update" method="POST">  
+     <input type="hidden" value="{{student.dataValues.id}}" name="id" >       
+        <div class="input-field col s12">
+          <input value="{{student.dataValues.firstName}}" id="first_name" name="first_name" type="text" class="validate" required>
+          <label for="first_name">Имя</label>
+          <span class="helper-text" data-error="Введите имя"></span>
+        </div>
+        <div class="input-field col s12">
+          <input value="{{student.dataValues.lastName}}" id="last_name" name="last_name" type="text" class="validate" required>
+          <label for="last_name">Фамилия</label>
+          <span class="helper-text" data-error="Введите фамилию"></span>
+        </div>
+        <div class="input-field col s12">
+          <input value="{{student.dataValues.birthDate}}" id="birth_date" name="birthdate" type="text" class="datepicker" required>
+          <label for="birthdate">День рождения</label>
+          
+        </div>
+        <div class="input-field col s12">
+            <select name="group_id" required >
+              {{#if groups.length}}
+                <option value="" disabled selected>Выберите группу</option>
+              {{#each groups}}
+                <option value="{{dataValues.id}}">{{dataValues.groupName}}</option>
+              {{/each}}
+              {{else}}
+                <option value="" disabled selected>Не добавлено не одной группы</option>
+              {{/if}}
+            </select>            
+            
+        </div>
+        <div class="row">
+          
+                    <button type="submit" class="waves-effect waves-light btn green"><i class="material-icons left">add</i>Изменить</button>
+                    <a href="/students" class="waves-effect waves-light btn red"><i class="material-icons left">cancel</i>Отменить</a>
+
+        </div>
+        
+
+             
+    </form>
+  </div>

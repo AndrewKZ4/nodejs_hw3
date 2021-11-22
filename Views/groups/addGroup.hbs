@@ -1,0 +1,19 @@
+<h1>Добавить группу</h1>
+
+ <div class="row">
+    <form class="col s12" action="/groups/add" method="POST">
+      
+        <div class="input-field col s12">
+          <input id="group_name" name="group_name" type="text" class="validate" required >
+          <label for="group_name">Название группы</label>
+          <span class="helper-text" data-error="Введите название"></span>
+        </div>      
+         <div class="row">
+          
+                    <button type="submit" class="waves-effect waves-light btn green"><i class="material-icons left">add</i>Добавить</button>
+                    <a href="/groups" class="waves-effect waves-light btn red"><i class="material-icons left">cancel</i>Отменить</a>
+
+        </div>
+               
+    </form>
+  </div>
